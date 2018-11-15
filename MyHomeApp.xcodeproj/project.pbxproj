@@ -11,6 +11,10 @@
 		0FA0D19C219D780B0017E89D /* AccessoryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA0D19A219D780B0017E89D /* AccessoryListViewController.xib */; };
 		0FA0D1A0219D7C820017E89D /* AccessoryBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0D19E219D7C820017E89D /* AccessoryBrowserViewController.swift */; };
 		0FA0D1A1219D7C820017E89D /* AccessoryBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA0D19F219D7C820017E89D /* AccessoryBrowserViewController.xib */; };
+		0FA0D1A5219D8D070017E89D /* ServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0D1A3219D8D070017E89D /* ServiceListViewController.swift */; };
+		0FA0D1A6219D8D070017E89D /* ServiceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA0D1A4219D8D070017E89D /* ServiceListViewController.xib */; };
+		0FA0D1AA219D909A0017E89D /* CharacteristicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0D1A8219D909A0017E89D /* CharacteristicListViewController.swift */; };
+		0FA0D1AB219D909A0017E89D /* CharacteristicListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA0D1A9219D909A0017E89D /* CharacteristicListViewController.xib */; };
 		0FFB4C192181D24000C3DCED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB4C182181D24000C3DCED /* AppDelegate.swift */; };
 		0FFB4C202181D24100C3DCED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FFB4C1F2181D24100C3DCED /* Assets.xcassets */; };
 		0FFB4C232181D24100C3DCED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFB4C212181D24100C3DCED /* LaunchScreen.storyboard */; };
@@ -24,6 +28,10 @@
 		0FA0D19A219D780B0017E89D /* AccessoryListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessoryListViewController.xib; sourceTree = "<group>"; };
 		0FA0D19E219D7C820017E89D /* AccessoryBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryBrowserViewController.swift; sourceTree = "<group>"; };
 		0FA0D19F219D7C820017E89D /* AccessoryBrowserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessoryBrowserViewController.xib; sourceTree = "<group>"; };
+		0FA0D1A3219D8D070017E89D /* ServiceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListViewController.swift; sourceTree = "<group>"; };
+		0FA0D1A4219D8D070017E89D /* ServiceListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceListViewController.xib; sourceTree = "<group>"; };
+		0FA0D1A8219D909A0017E89D /* CharacteristicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicListViewController.swift; sourceTree = "<group>"; };
+		0FA0D1A9219D909A0017E89D /* CharacteristicListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacteristicListViewController.xib; sourceTree = "<group>"; };
 		0FFB4C152181D24000C3DCED /* MyHomeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHomeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFB4C182181D24000C3DCED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FFB4C1F2181D24100C3DCED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +73,24 @@
 			path = AccessoryBrowser;
 			sourceTree = "<group>";
 		};
+		0FA0D1A7219D8D0A0017E89D /* ServiceList */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0D1A3219D8D070017E89D /* ServiceListViewController.swift */,
+				0FA0D1A4219D8D070017E89D /* ServiceListViewController.xib */,
+			);
+			path = ServiceList;
+			sourceTree = "<group>";
+		};
+		0FA0D1AC219D909D0017E89D /* CharacteristicList */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0D1A8219D909A0017E89D /* CharacteristicListViewController.swift */,
+				0FA0D1A9219D909A0017E89D /* CharacteristicListViewController.xib */,
+			);
+			path = CharacteristicList;
+			sourceTree = "<group>";
+		};
 		0FFB4C0C2181D24000C3DCED = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +119,8 @@
 				0FFB4C322181D2DF00C3DCED /* SelectHome */,
 				0FA0D19D219D78110017E89D /* AccessoryList */,
 				0FA0D1A2219D7C880017E89D /* AccessoryBrowser */,
+				0FA0D1A7219D8D0A0017E89D /* ServiceList */,
+				0FA0D1AC219D909D0017E89D /* CharacteristicList */,
 			);
 			path = MyHomeApp;
 			sourceTree = "<group>";
@@ -179,6 +207,8 @@
 			files = (
 				0FFB4C232181D24100C3DCED /* LaunchScreen.storyboard in Resources */,
 				0FFB4C312181D2D000C3DCED /* SelectHomeViewController.xib in Resources */,
+				0FA0D1AB219D909A0017E89D /* CharacteristicListViewController.xib in Resources */,
+				0FA0D1A6219D8D070017E89D /* ServiceListViewController.xib in Resources */,
 				0FFB4C202181D24100C3DCED /* Assets.xcassets in Resources */,
 				0FA0D19C219D780B0017E89D /* AccessoryListViewController.xib in Resources */,
 				0FA0D1A1219D7C820017E89D /* AccessoryBrowserViewController.xib in Resources */,
@@ -192,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA0D1A5219D8D070017E89D /* ServiceListViewController.swift in Sources */,
+				0FA0D1AA219D909A0017E89D /* CharacteristicListViewController.swift in Sources */,
 				0FFB4C192181D24000C3DCED /* AppDelegate.swift in Sources */,
 				0FA0D19B219D780B0017E89D /* AccessoryListViewController.swift in Sources */,
 				0FA0D1A0219D7C820017E89D /* AccessoryBrowserViewController.swift in Sources */,

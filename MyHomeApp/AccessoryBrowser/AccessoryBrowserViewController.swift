@@ -23,23 +23,35 @@ class AccessoryBrowserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Searching..."
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.accessoryBrowser = HMAccessoryBrowser()
         self.accessoryBrowser.delegate = self
         self.accessoryBrowser.startSearchingForNewAccessories()
     }
 }
 
-extension AccessoryBrowserViewController: UITableViewDelegate, UITableViewDataSource {
+extension AccessoryBrowserViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        cell.textLabel?.text = self.accessories[indexPath.row].name
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.accessories.count
     }
-    
+}
+
+extension AccessoryBrowserViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedHome.addAccessory(self.accessories[indexPath.row]) {
+            err in
+            if err == nil {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
     }
 }
 
